@@ -1,1 +1,5 @@
-    
+S=set()
+S.add(18)
+S.add(18.0)
+S.add("18")
+print("length (",S,") = ",len(S))

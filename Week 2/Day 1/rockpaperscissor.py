@@ -1,3 +1,4 @@
+import random
 def game(a,b):
     if(a=='R'):
         if(b=='P'):
@@ -22,13 +23,21 @@ def game(a,b):
         elif(b=='S'):
             return 2
 
-a=input("Player 1 turn: Rock(R) or Paper(P) or Scissor(S)?")
-b=input("Player 2 turn: Rock(R) or Paper(P) or Scissor(S)?")
-C=game(a,b)
+a=input("Player 1 turn: Rock(R) or Paper(P) or Scissor(S)? \n")
+# b=input("Player 2 turn: Rock(R) or Paper(P) or Scissor(S)?")
+randNo=random.randint(1,3)
+if(randNo==1):
+    comp='R'
+elif(randNo==2):
+    comp='P'
+else:
+    comp='S'
+print("Computer chose "+comp)
+C=game(a,comp)
 if(C==0):
-    print("Player 2 won, Player 1 lost")
+    print("Computer won, Player 1 lost")
 elif(C==1):
-    print("Player 1 won, Player 2 lost")
+    print("Player 1 won, Computer lost")
 elif(C==2):
     print("Match was Draw")
 else:

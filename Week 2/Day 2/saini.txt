@@ -1,0 +1,3 @@
+Lets learn how to use the file handling operation in python
+and lets try some functions
+NEW LINE

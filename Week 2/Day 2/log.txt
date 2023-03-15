@@ -22,7 +22,7 @@
  05 
 03/22 08:51:06 INFO   :.....mailslot_create: creating mailslot for RSVP
 03/22 08:51:06 INFO   :....mailbox_register: mailbox allocated for rsvp
-03/22 08:51:06 INFO   :.....mailslot_create: creating mailslot for RSVP via UDP
+03/22 08:51:06 INFO   :.....mailslot_create: creating PYTHON for RSVP via UDP
  06 
 03/22 08:51:06 WARNING:.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
 03/22 08:51:06 INFO   :....mailbox_register: mailbox allocated for rsvp-udp

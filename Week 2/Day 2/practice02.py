@@ -1,15 +1,18 @@
 def game():
-    a=input("Present score: ")
+    a=int(input("Present score: "))
     return a
-f=open("game.txt")
-a=f.read()
+with open("game.txt") as f:
+    c=f.read()
 b=game()
-if(b>a):
+if c=='':
     print("HIGH SCORE : ",str(b))
-    print("Previous High score : ",str(a))
-    with open("game.txt",'w') as f:
-        f.write(b)
+    with open("game.txt",'w') as g:
+        c=g.write(str(b))
+elif int(c)<b:
+    print("HIGH SCORE : ",str(b))
+    print("Previous High score : ",c)
+    with open("game.txt",'w') as g:
+        g.write(str(b))
 else:
     print("Score : ",str(b))
-    print("HIGH SCORE : ",str(a))
-f.close()
+    print("HIGH SCORE : ",c)

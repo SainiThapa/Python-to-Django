@@ -12,5 +12,6 @@ with open("log.txt") as g:
     while(line):
         line=g.readline()
         if 'python' in line.lower():
-            print("python is present on the line",str(i));
+            print(line)
+            print("python is present on the line",str(i),"\n");
         i+=1

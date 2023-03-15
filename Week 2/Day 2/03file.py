@@ -1,4 +1,4 @@
-# write in the file
+# write mode in the file
 f=open("text.txt",'w+')
 a=input("Enter any string to enter in the file: ")
 f.write(a)

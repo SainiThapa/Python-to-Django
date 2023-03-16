@@ -6,3 +6,4 @@ if b in a:
     print("Euler is present in the article")
 else:
     print("Euler is not present in the article")
+f.close()

@@ -22,5 +22,6 @@ print(list2)
 # Another example can be 
 
 fill=lambda x:True if x%2==0 else False
-list3=list(filter(fill,list1))
+list3=list(filter(fill,list1)) 
+# list3=list(filter(lambda x: True if x%2==0 else False,list1))
 print(list3)

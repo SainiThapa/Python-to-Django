@@ -1,0 +1,37 @@
+Step 1: python -m install virtualenv
+
+Step 2: we first navigate ourself to the required folder/directory location to create the virtual environment
+    Example : C:\Users\Desktop\Python3>
+
+Step 3: python -m venv NEWPROJECT
+A new virual environment is being created
+
+Step 4: cd NEWPROJECT (C:\Users\Desktop\Python3\NEWPROJECT>)
+        
+        cd Scripts (C:\Users\Desktop\Python3\NEWPROJECT\Scripts>)
+        
+        C:\Users\Desktop\Python3\NEWPROJECT\Scripts> activate
+
+        (NEWPROJECT) C:\Users\Desktop\Python3\NEWPROJECT\Scripts>
+
+Step 5: python -m pip install Django 
+        (This installs the Django in the virtual environment)
+        NOTE: If you're pip is outdated you can upgrade it first hand with 
+            'python -m pip install --upgrade pip'
+
+Step 6: cd.. 
+        (C:\Users\Desktop\Python3\NEWPROJECT>)
+
+Step 7: python Scripts/django-admin.exe startproject MYSITE
+        
+        (Creates a project folder named 'MYSITE')
+
+Step 8: cd MYSITE
+        (C:\Users\Desktop\Python3\NEWPROJECT\MYSITE>)
+
+Step 9: python manage.py runserver
+
+        (Runs the server at http://127.0.0.1:8000/)
+        
+
+''OUR PROJECT IS READY TO START''

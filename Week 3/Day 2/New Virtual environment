@@ -1,4 +1,4 @@
-Step 1: python -m install virtualenv
+Step 1: python -m pip install virtualenv
 
 Step 2: we first navigate ourself to the required folder/directory location to create the virtual environment
     Example : C:\Users\Desktop\Python3>
